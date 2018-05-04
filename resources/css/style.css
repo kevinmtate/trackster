@@ -1,0 +1,45 @@
+/*
+  Custom styles for Trackster App
+*/
+
+html {
+	font-size: 16px;
+}
+
+
+/* BOOSTRAP-NAVBAR CUSTOM STYLES AND POSITIONING */
+.navbar {
+	background-color: rgb(35, 2, 63);
+	height: 100px;
+}
+
+.container-fluid {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-default .navbar-brand {
+	font-family: Righteous;
+	font-size: 2.5rem;
+	color: rgb(255, 0, 171);
+}
+
+.form-control::placeholder {
+	color: rgb(191, 191, 191);
+}
+
+.form-control {
+	border-radius: 50px;
+}
+
+.navbar i {
+	background-color: rgb(255, 102, 204);
+	padding: 5px 1.5rem;
+	border-radius: 2rem;
+}
+
+.navbar i:hover {
+	background-color: rgb(225, 0, 171);
+	cursor: pointer;
+}
