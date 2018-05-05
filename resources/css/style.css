@@ -10,16 +10,23 @@ html {
 /* BOOSTRAP-NAVBAR CUSTOM STYLES AND POSITIONING */
 .navbar {
 	background-color: rgb(35, 2, 63);
-	height: 100px;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
-.container-fluid {
-	height: 100%;
+.container {
+	width: 100%;
+}
+
+#navbar-container {
+	height: 100px;
 	display: flex;
 	align-items: center;
+	margin: 0;
+	width: 100%;
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
 	font-family: Righteous;
 	font-size: 2.5rem;
 	color: rgb(255, 0, 171);
@@ -42,4 +49,30 @@ html {
 .navbar i:hover {
 	background-color: rgb(225, 0, 171);
 	cursor: pointer;
+}
+
+
+main {
+	background-color: black;
+}
+
+/* SONG LIST HEADER */
+#tableheader {
+	background-color: rgb(104, 0, 255);
+	color: rgb(255, 255, 255);
+	padding: 0.5rem 0;
+}
+
+
+/* TRACK LIST */
+.track {
+	border-top: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+	color: rgb(174, 174, 174);
+	font-family: 'Work Sans';
+	padding: 1rem 0;
+}
+
+.track i {
+	color: rgb(235, 0, 171);
 }
