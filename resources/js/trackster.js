@@ -15,7 +15,25 @@ $(document).ready(function() {
   Append each "row" to the container in the body to display all tracks. 
 */
 Trackster.renderTracks = function(tracks) {
+	$('.tracklist').empty();
 
+	for (i = 0; i < tracks.length; i++) {
+		var track = tracks[i];
+		var trackNumber = i+1;
+		var mediumAlbumArt = track.image[1]['#text'];
+
+		var htmlTrackRow = 
+		"<div class='row track'> \
+			<a class='col-sm-1 text-right' href="+track.url+" target='_blank'><i class='fa fa-play-circle-o fa-lg'></i></a> \
+			<div class='col-sm-1 text-right'>"+trackNumber+"</div> \
+			<div class='col-sm-4'>"+track.name+"</div> \
+			<div class='col-sm-2'>"+track.artist+"</div> \
+			<div class='col-sm-2'><img src="+mediumAlbumArt+" width='100px' alt='album art'></div> \
+			<div class='col-sm-2'>"+track.listeners+"</div> \
+		</div>";
+
+		$('.tracklist').append(htmlTrackRow);
+	}
 };
 
 /*
@@ -28,6 +46,7 @@ Trackster.searchTracksByTitle = function(title) {
 		datatype: 'jsonp',
 		success: function(data) {
 			console.log(data);
+			Trackster.renderTracks(data.results.trackmatches.track);
 		}
 	})
 };

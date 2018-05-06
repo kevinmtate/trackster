@@ -16,6 +16,8 @@ html {
 
 .container {
 	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 #navbar-container {
@@ -54,6 +56,10 @@ html {
 
 main {
 	background-color: black;
+}
+
+.row {
+	margin: 0;
 }
 
 /* SONG LIST HEADER */
