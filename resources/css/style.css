@@ -79,6 +79,11 @@ main {
 	padding: 1rem 0;
 }
 
+.track:hover {
+	background-color: rgb(239, 237, 242);
+	color: rgb(35, 2, 63);
+}
+
 .track i {
 	color: rgb(235, 0, 171);
 }
