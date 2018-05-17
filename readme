@@ -1,0 +1,17 @@
+New features:
+
+1) The design spec only uses a small portion of the data for each track which the API supplies. 
+Add columns for more information. The list might get wide enough to scroll horizontally.
+
+2) The numbers in the "Listeners" column can be hard to read. For example, numbers like 50421 and 1029333 could benefit 
+from an improvement in their numerical formatting.
+
+Use a JavaScript library to improve the numerical formatting of this column. -> http://numeraljs.com/
+
+3) On many apps, when a user finishes typing in a search box they can use the "Return" key, a.k.a. "Enter", 
+to submit their search. Implement this in your app.
+
+4) Animate the title text, "trackster", between the time the user clicks the search button and the time that the song list 
+is displayed.
+
+5) Allow the user to sort the columns by any attribute of the track information by clicking on the corresponding column.
