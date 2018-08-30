@@ -3,11 +3,21 @@ const API_KEY = '4089fbf883b85819697f5a60a91e3918';
 
 $(document).ready(function() {
 
+	search();
+
+});
+
+function search() {
 	$('#search').click(function() {
 		Trackster.searchTracksByTitle($('#input').val());
 	});
 
-});
+	$('#input').keyup(function(event) {
+		if (event.keyCode === 13) {
+			$('#search').click();
+		}
+	});
+}
 
 
 /*
