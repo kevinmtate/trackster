@@ -31,15 +31,16 @@ Trackster.renderTracks = function(tracks) {
 		var track = tracks[i];
 		var trackNumber = i+1;
 		var mediumAlbumArt = track.image[1]['#text'];
+		var listeners = parseInt(track.listeners).toLocaleString();
 
 		var htmlTrackRow = 
 		"<div class='row track'> \
-			<a class='col-sm-1 text-right' href="+track.url+" target='_blank'><i class='fa fa-play-circle-o fa-lg'></i></a> \
 			<div class='col-sm-1 text-right'>"+trackNumber+"</div> \
+			<a class='col-sm-1 text-right' href="+track.url+" target='_blank'><i class='fa fa-play-circle-o fa-lg fa-2x'></i></a> \
 			<div class='col-sm-4'>"+track.name+"</div> \
 			<div class='col-sm-2'>"+track.artist+"</div> \
-			<div class='col-sm-2'><img src="+mediumAlbumArt+" width='100px' alt='album art'></div> \
-			<div class='col-sm-2'>"+track.listeners+"</div> \
+			<div class='col-sm-2'><img src="+mediumAlbumArt+" width='50px' alt='album art'></div> \
+			<div class='col-sm-2'>"+listeners+"</div> \
 		</div>";
 
 		$('.tracklist').append(htmlTrackRow);

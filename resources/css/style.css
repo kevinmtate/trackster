@@ -10,28 +10,28 @@ html {
 /* BOOSTRAP-NAVBAR CUSTOM STYLES AND POSITIONING */
 .navbar {
 	background-color: rgb(35, 2, 63);
-	margin-bottom: 0;
 	border-radius: 0;
+	margin-bottom: 0;
 }
 
 .container {
-	width: 100%;
 	padding-right: 0;
 	padding-left: 0;
+	width: 100%;
 }
 
 #navbar-container {
-	height: 100px;
-	display: flex;
 	align-items: center;
+	display: flex;
+	height: 100px;
 	margin: 0;
 	width: 100%;
 }
 
 .navbar .navbar-brand {
+	color: rgb(255, 0, 171);
 	font-family: Righteous;
 	font-size: 2.5rem;
-	color: rgb(255, 0, 171);
 }
 
 .form-control::placeholder {
@@ -44,8 +44,8 @@ html {
 
 .navbar i {
 	background-color: rgb(255, 102, 204);
-	padding: 5px 1.5rem;
 	border-radius: 2rem;
+	padding: 5px 1.5rem;
 }
 
 .navbar i:hover {
@@ -55,7 +55,9 @@ html {
 
 
 main {
-	background-color: black;
+	background-color: #00000000;
+	font-family: Roboto;
+	letter-spacing: 1px;
 }
 
 .row {
@@ -66,16 +68,20 @@ main {
 #tableheader {
 	background-color: rgb(104, 0, 255);
 	color: rgb(255, 255, 255);
+	font-family: Righteous;
+	font-size: 1.1rem;
 	padding: 0.5rem 0;
 }
 
 
 /* TRACK LIST */
 .track {
-	border-top: 1px solid rgb(204, 204, 204);
+	align-items: center;
 	border-bottom: 1px solid rgb(204, 204, 204);
-	color: rgb(174, 174, 174);
-	font-family: 'Work Sans';
+	border-top: 1px solid rgb(204, 204, 204);
+	color: #464545;
+	display: flex;
+	font-size: 1.1rem;
 	padding: 1rem 0;
 }
 
