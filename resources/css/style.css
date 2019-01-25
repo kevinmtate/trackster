@@ -57,6 +57,7 @@ html {
 main {
 	background-color: #00000000;
 	font-family: Roboto;
+	font-size: 1.1rem;
 	letter-spacing: 1px;
 }
 
@@ -68,8 +69,6 @@ main {
 #tableheader {
 	background-color: rgb(104, 0, 255);
 	color: rgb(255, 255, 255);
-	font-family: Righteous;
-	font-size: 1.1rem;
 	padding: 0.5rem 0;
 }
 
@@ -81,7 +80,6 @@ main {
 	border-top: 1px solid rgb(204, 204, 204);
 	color: #464545;
 	display: flex;
-	font-size: 1.1rem;
 	padding: 1rem 0;
 }
 
