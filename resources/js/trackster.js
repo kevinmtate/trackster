@@ -24,7 +24,7 @@ Trackster.renderTracks = function(tracks) {
 
 	let i=1;
 	tracks.forEach((track) => {
-		var trackNumber = i+1;
+		var trackNumber = i++;
 		// var trackInfo = Trackster.getTrackInfo(track.artist, track.name);
 		// var album = trackInfo.track.album.title;
 		// console.log(album);
